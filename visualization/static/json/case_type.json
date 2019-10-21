@@ -1,0 +1,82 @@
+{
+  "primary_category": [
+    {
+      "name": "\u5211\u4e8b\u6848\u4ef6",
+      "value": 21
+    },
+    {
+      "name": "\u6c11\u4e8b\u6848\u4ef6",
+      "value": 19
+    },
+    {
+      "name": "\u884c\u653f\u6848\u4ef6",
+      "value": 18
+    },
+    {
+      "name": "\u7ecf\u6d4e\u6848\u4ef6",
+      "value": 17
+    }
+  ],
+  "minor_category": [
+    {
+      "name": "\u6545\u610f\u6740\u4eba\u6848",
+      "value": 422
+    },
+    {
+      "name": "\u8bc8\u9a97\u6848",
+      "value": 185
+    },
+    {
+      "name": "\u6572\u8bc8\u52d2\u7d22\u6848",
+      "value": 147
+    },
+    {
+      "name": "\u8fc7\u5931\u81f4\u4eba\u6b7b\u4ea1\u6848",
+      "value": 144
+    },
+    {
+      "name": "\u6301\u67aa\u62a2\u52ab\u6848",
+      "value": 138
+    },
+    {
+      "name": "\u6252\u7a83\u6848",
+      "value": 129
+    },
+    {
+      "name": "\u76d7\u7a83\u6848",
+      "value": 124
+    },
+    {
+      "name": "\u6545\u610f\u4f24\u5bb3\u6848",
+      "value": 124
+    },
+    {
+      "name": "\u76d7\u7a83\u8def\u8d22\u6848",
+      "value": 108
+    },
+    {
+      "name": "\u5f3a\u5978\u6848",
+      "value": 101
+    },
+    {
+      "name": "\u62a2\u593a\u6848",
+      "value": 95
+    },
+    {
+      "name": "\u62a2\u52ab\u6848",
+      "value": 77
+    },
+    {
+      "name": "\u5165\u5ba4\u76d7\u7a83\u6848",
+      "value": 63
+    },
+    {
+      "name": "\u4ea4\u901a\u8087\u4e8b\u9003\u9038\u6848",
+      "value": 63
+    },
+    {
+      "name": "\u5176\u4ed6",
+      "value": 11
+    }
+  ]
+}

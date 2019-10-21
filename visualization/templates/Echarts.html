@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>雷达图</title>
+    <!-- 引入 echarts.js -->
+    <script src='https://cdn.bootcss.com/echarts/3.4.0/echarts.js'></script>
+</head>
+<body>
+<table width="1880px" height="960px">
+    <tr height="30%">
+        <td width="50%" colspan="2">
+            <div id='wormhole' style='width:100%; height: 100%; float: left;'></div>
+        </td>
+    </tr>
+</table>
+
+<script type='text/javascript'>
+    var pie = echarts.init(document.getElementById('wormhole'));
+    option = {
+
+        title : {
+            text: '浏览器占比变化',
+            subtext: '纯属虚构',
+            x:'right',
+            y:'bottom'
+        },
+        tooltip : {
+            trigger: 'item',
+            backgroundColor : 'rgba(0,0,250,0.2)'
+        },
+        legend: {
+           // orient : 'vertical',
+            //x : 'center',
+            data: function (){
+                    var list = [];
+                    for (var i = 1; i <=28; i++) {
+                        list.push(i + 2000);
+                    }
+                    return list;
+                }()
+        },
+        toolbox: {
+            show : true,
+            orient : 'vertical',
+            y:'center',
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+       polar : [
+           {
+               indicator : [
+                   { text: 'IE8-', max: 400},
+                   { text: 'IE9+', max: 400},
+                   { text: 'Safari', max: 400},
+                   { text: 'Firefox', max: 400},
+                   { text: 'Chrome', max: 400}
+                ],
+                center : ['50%', 240],
+                radius : 150
+            }
+        ],
+        calculable : false,
+        series : (function (){
+            var series = [];
+            for (var i = 1; i <= 28; i++) {
+                series.push({
+                    name:'浏览器（数据纯属虚构）',
+                    type:'radar',
+                    symbol:'none',
+                    itemStyle: {
+                        normal: {
+                            lineStyle: {
+                              width:1
+                            }
+                        },
+                        emphasis : {
+                            areaStyle: {color:'rgba(0,250,0,0.3)'}
+                        }
+                    },
+                    data:[
+                      {
+                        value:[
+                            (40 - i) * 10,
+                            (38 - i) * 4 + 60,
+                            i * 5 + 10,
+                            i * 9,
+                            i * i /2
+                        ],
+                        name:i + 2000
+                      }
+                    ]
+                })
+            }
+            return series;
+        })()
+    };
+    pie.setOption(option);
+</script>
+</body>
+</html>
